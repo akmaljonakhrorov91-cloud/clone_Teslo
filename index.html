@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
     <title>Teslo shopping</title>
+    <link rel="stylesheet" href="./CSS/style.css">
   </head>
   <body>
     <!-- top bar -->
@@ -61,7 +62,7 @@
         <div class="my-8" id="exterior-buttons">
             <h3 class="font-semibold mb-2">Exterior Colors</h3>
             <div class="flex space-x-2">
-                <button class="transition-transform duration-300 hover:scale-110">
+                <button class="btn-selected transition-transform duration-300 hover:scale-110">
                     <img src="./images/button-stealth-grey.avif" 
                     alt="stealth Gray"
                     class="w-22">
@@ -93,6 +94,21 @@
                 </button>
             </div>
         </div>
+        <!-- interior buttons -->
+        <h3 class="font-semibold mb-2">Interior Colors</h3>
+        <div class="flex space-x-2">
+            <button class="btn-selected transition-transform duration-300 hover:scale-110">
+                <img src="./images/button-dark.avif" 
+                alt="Dark"
+                class="w-12">
+            </button>
+            <button class="transition-transform duration-300 hover:scale-110">
+                <img src="./images/button-light.avif" 
+                alt="Light"
+                class="w-12">
+            </button>
+        </div>
+            
       </aside>
     </main>
     <script src="./JS/main.js"></script>
