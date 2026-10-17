@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
     <title>Teslo shopping</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <!-- top bar -->
@@ -28,7 +28,7 @@
       <!-- images -->
       <section class="w-full md:w-3/4">
         <div class="sticky top-24">
-            <!-- exterior -->
+          <!-- exterior -->
           <div
             class="bg-gray-200 flex h-96 items-center justify-center overflow-hidden"
           >
@@ -39,18 +39,19 @@
               id="exterior-image"
             />
           </div>
-          <!-- interior -->
-          <div class="sticky top-24">
-            <div
-              class="bg-gray-200 flex h-96 items-center justify-center overflow-hidden"
-            >
-              <img
-                class="max-w-full h-auto transform scale-125"
-                src="./images/model-y-interior-dark.jpg"
-                alt="Model-y interior"
-                id="interior-image"
-              />
-            </div>
+        </div>
+        <!-- interior -->
+        <div class="sticky top-24">
+          <div
+            class="bg-gray-200 flex h-96 items-center justify-center overflow-hidden"
+          >
+            <img
+              class="max-w-full h-auto transform scale-125"
+              src="./images/model-y-interior-dark.jpg"
+              alt="Model-y interior"
+              id="interior-image"
+            />
+          </div>
         </div>
       </section>
       <!-- sidebar -->
@@ -60,94 +61,166 @@
         <h2 class="text-center text-xl font-light mb-4">Customize Your Car</h2>
         <!-- exterior buttons -->
         <div class="my-8" id="exterior-buttons">
-            <h3 class="font-semibold mb-2">Exterior Colors</h3>
-            <div class="flex space-x-2">
-                <button class="btn-selected transition-transform duration-300 hover:scale-110">
-                    <img id="exterior-image" src="./images/button-stealth-grey.avif" 
-                    alt="Stealth Grey"
-                    class="w-22">
-                </button>
-                <button class="transition-transform duration-300 hover:scale-110">
-                    <img id="exterior-image" src="./images/button-pearl-white.avif" 
-                    alt="Pearl White"
-                    class="w-22">
-                </button>
-                <button class="transition-transform duration-300 hover:scale-110">
-                    <img id="exterior-image" src="./images/button-deep-blue-metallic.avif" 
-                    alt="Deep Blue"
-                    class="w-22">
-                </button>
-                <button class="transition-transform duration-300 hover:scale-110">
-                    <img id="exterior-image" src="./images/button-solid-black.avif" 
-                    alt="Solid Black"
-                    class="w-22">
-                </button>
-                <button class="transition-transform duration-300 hover:scale-110">
-                    <img id="exterior-image" src="./images/button-ultra-red.avif" 
-                    alt="Ultra Red"
-                    class="w-22">
-                </button>
-                <button class="transition-transform duration-300 hover:scale-110">
-                    <img id="exterior-image" src="./images/button-quicksilver.avif" 
-                    alt="Quicksilver"
-                    class="w-22">
-                </button>
-            </div>
+          <h3 class="font-semibold mb-2">Exterior Colors</h3>
+          <div class="flex space-x-2">
+            <button
+              class="btn-selected transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="./images/button-stealth-grey.avif"
+                alt="Stealth Grey"
+                class="w-22"
+              />
+            </button>
+            <button class="transition-transform duration-300 hover:scale-110">
+              <img
+                src="./images/button-pearl-white.avif"
+                alt="Pearl White"
+                class="w-22"
+              />
+            </button>
+            <button class="transition-transform duration-300 hover:scale-110">
+              <img
+                src="./images/button-deep-blue-metallic.avif"
+                alt="Deep Blue"
+                class="w-22"
+              />
+            </button>
+            <button class="transition-transform duration-300 hover:scale-110">
+              <img
+                src="./images/button-solid-black.avif"
+                alt="Solid Black"
+                class="w-22"
+              />
+            </button>
+            <button class="transition-transform duration-300 hover:scale-110">
+              <img
+                src="./images/button-ultra-red.avif"
+                alt="Ultra Red"
+                class="w-22"
+              />
+            </button>
+            <button class="transition-transform duration-300 hover:scale-110">
+              <img
+                src="./images/button-quicksilver.avif"
+                alt="Quicksilver"
+                class="w-22"
+              />
+            </button>
+          </div>
         </div>
         <!-- interior buttons -->
         <h3 class="font-semibold mb-2">Interior Colors</h3>
         <div class="flex space-x-2" id="interior-buttons">
-            <button class="btn-selected transition-transform duration-300 hover:scale-110">
-                <img id="interior-image" src="./images/button-dark.avif" 
-                alt="Dark"
-                class="w-12">
-            </button>
-            <button class="transition-transform duration-300 hover:scale-110">
-                <img id="interior-image" src="./images/button-light.avif" 
-                alt="Light"
-                class="w-12">
-            </button>
+          <button
+            class="btn-selected transition-transform duration-300 hover:scale-110"
+          >
+            <img src="./images/button-dark.avif" alt="Dark" class="w-12" />
+          </button>
+          <button class="transition-transform duration-300 hover:scale-110">
+            <img src="./images/button-light.avif" alt="Light" class="w-12" />
+          </button>
         </div>
-           <div class="mb-8" id="wheel-buttons">
-            <h3 class="font-semibold mb-2">Wheels</h3>
-            <button class="w-full py-4 mb-2 bg-gray-700 hover:bg-gray-600 hover:text-white text-white rounded-xl">Standart</button>
-            <button class="w-full py-4 mb-2 bg-gray-300 hover:bg-gray-600 hover:text-white rounded-xl">Performance Wheels +($2,500)</button> 
-          </div> 
-          <!-- Self driving option -->
-          <div class="border p-4 mb-8 rounded-lg shadow">
-            <h3 class="font-semibold mb-2">Full Self-driving</h3>
-            <label class="flex items-center space-x-3">
-              <input class="form-checkbox h-5 w-5 text-blue-600" type="checkbox" id="full-self-driving-checkbox">
+        <div class="mb-8" id="wheel-buttons">
+          <h3 class="font-semibold mb-2">Wheels</h3>
+          <button
+            class="w-full py-4 mb-2 bg-gray-700 hover:bg-gray-600 hover:text-white text-white rounded-xl"
+          >
+            Standart
+          </button>
+          <button
+            class="w-full py-4 mb-2 bg-gray-300 hover:bg-gray-600 hover:text-white rounded-xl"
+          >
+            Performance Wheels +($2,500)
+          </button>
+        </div>
+        <!-- Self driving option -->
+        <div class="border p-4 mb-8 rounded-lg shadow">
+          <h3 class="font-semibold mb-2">Full Self-driving</h3>
+          <label class="flex items-center space-x-3">
+            <input
+              class="form-checkbox h-5 w-5 text-blue-600"
+              type="checkbox"
+              id="full-self-driving-checkbox"
+            />
             <span>Add Full Self-driving for $8,500</span>
+          </label>
+        </div>
+        <!-- Performance upgrade -->
+        <div class="mb-8">
+          <h3 class="font-semibold mb-2">performance package</h3>
+          <button
+            class="w-full bg-gray-200 rounded-lg py-4 hover:bg-gray-400"
+            id="performance-btn"
+          >
+            Performance upgrade +($5,000)
+          </button>
+        </div>
+        <!-- Accessories Checkboxes -->
+        <div class="my-8">
+          <h3 class="font-semibold mb-2">Accessories</h3>
+          <div class="space-y-4">
+            <label
+              class="flex items-center justify-between py-4 px-4 border rounded-lg shadow"
+            >
+              <span>Center Console Trays</span>
+              <span class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="accessory-form-checkbox h-5 w-5"
+                />
+                <span>$35</span>
+              </span>
+            </label>
+            <label
+              class="flex items-center justify-between py-4 px-4 border rounded-lg shadow"
+            >
+              <span>Sunshade</span>
+              <span class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="accessory-form-checkbox h-5 w-5"
+                />
+                <span>$105</span>
+              </span>
+            </label>
+            <label
+              class="flex items-center justify-between py-4 px-4 border rounded-lg shadow"
+            >
+              <span>All-Weather Interior Liners</span>
+              <span class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="accessory-form-checkbox h-5 w-5"
+                />
+                <span>$225</span>
+              </span>
             </label>
           </div>
-          <!-- Performance upgrade -->
-          <div class="mb-8">
-            <h3 class="font-semibold mb-2">
-              performance package
-            </h3>
-            <button class="w-full bg-gray-200 rounded-lg py-4
-            hover:bg-gray-400">
-              Performance upgrade +($5,000) </button>
-          </div>
-          <!-- Total price -->
-          <div class="pt-4">
-            <h3 class="font-semibold text-lg">Total price</h3>
-            <p class="text-2xl font-semi" id="total-price">$52,490</p>
-          </div>
-          <!-- Payment breakdown -->
-          <div class="border-t pt-4 mt-6">
-            <h3 class="font-semibold text-lg">Estimated Payment Breakdown</h3>
+        </div>
+        <!-- Total price -->
+        <div class="pt-4">
+          <h3 class="font-semibold text-lg">Total price</h3>
+          <p class="text-2xl font-semi" id="total-price">$52,490</p>
+        </div>
+        <!-- Payment breakdown -->
+        <div class="border-t pt-4 mt-6">
+          <h3 class="font-semibold text-lg">Estimated Payment Breakdown</h3>
           <div class="mt-4">
             <p>
               Down Payment:
               <span class="font-bold" id="down-payment">$5000</span>
             </p>
-            <p>Long Term: <span class="font-bold">60 Months</span> </p>
-            <p>Interest Rate: <span class="font-bold">3% APR</span> </p>
-            <p>Estimated Monthly Payment: <span id="monthly-payment" class="font-bold text-2xl">$970.15</span> </p>
+            <p>Long Term: <span class="font-bold">60 Months</span></p>
+            <p>Interest Rate: <span class="font-bold">3% APR</span></p>
+            <p>
+              Estimated Monthly Payment:
+              <span id="monthly-payment" class="font-bold text-2xl"
+                >$970.15</span
+              >
+            </p>
           </div>
-          </div>
+        </div>
       </aside>
     </main>
     <script src="./JS/main.js"></script>
